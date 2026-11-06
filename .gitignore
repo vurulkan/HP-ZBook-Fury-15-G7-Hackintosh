@@ -1,0 +1,12 @@
+.DS_Store
+._*
+__pycache__/
+*.pyc
+dist/
+*.log
+*.bak
+oldConfig.plist
+config-personal.plist
+EFI-personal/
+nvram.plist
+opencore-*.txt

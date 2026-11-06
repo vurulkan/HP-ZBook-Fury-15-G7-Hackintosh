@@ -1,0 +1,20 @@
+name: Validate public EFI
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download matching OpenCore validator
+        run: |
+          curl --fail --location --silent --show-error https://github.com/acidanthera/OpenCorePkg/releases/download/1.0.8/OpenCore-1.0.8-RELEASE.zip -o /tmp/OpenCore.zip
+          echo '2011e8b7216ecb2645d97ea710df965947edd406846e92050b9bc4190be6d27b  /tmp/OpenCore.zip' | sha256sum --check
+          unzip -q /tmp/OpenCore.zip -d /tmp/OpenCore
+          chmod +x /tmp/OpenCore/Utilities/ocvalidate/ocvalidate.linux
+      - name: Check privacy, configured files and OpenCore schema
+        run: python3 scripts/validate.py --ocvalidate /tmp/OpenCore/Utilities/ocvalidate/ocvalidate.linux

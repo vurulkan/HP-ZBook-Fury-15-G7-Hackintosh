@@ -1,0 +1,97 @@
+[
+  {
+    "path": "SSDT-AWAC.aml",
+    "enabled": true,
+    "comment": "SSDT-AWAC.aml"
+  },
+  {
+    "path": "SSDT-EC-USBX-LAPTOP.aml",
+    "enabled": true,
+    "comment": "SSDT-EC-USBX-LAPTOP.aml"
+  },
+  {
+    "path": "SSDT-GPU-SPOOF.aml",
+    "enabled": true,
+    "comment": "SSDT-GPU-SPOOF.aml"
+  },
+  {
+    "path": "SSDT-HP-FixLidSleep.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-GPIO.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "DMAR.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-GPRW.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-TB3-HP.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-HPET.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-USBX.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-PTSWAKTTS.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-PMC.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-DeepIdle.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-EC.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-PCI0.LPCB-Wake-AOAC.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-PLUG-DRTNIA.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-PNLF.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-XOSI.aml",
+    "enabled": true,
+    "comment": ""
+  },
+  {
+    "path": "SSDT-HP-Brightness.aml",
+    "enabled": true,
+    "comment": "HP brightness events to DD02 (device DSDT verified)"
+  }
+]
